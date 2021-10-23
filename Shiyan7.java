@@ -13,7 +13,7 @@ import com.dingtalk.api.DingTalkClient;
 import com.dingtalk.api.request.OapiRobotSendRequest;
 import com.dingtalk.api.response.OapiRobotSendResponse;
 
-public class shiyan7 {
+public class Shiyan7 {
 	public static void main(String[] args) throws Exception {
 		//加密，获取timestamp和sign，得到最终的签名
 		 Long timestamp = System.currentTimeMillis();
