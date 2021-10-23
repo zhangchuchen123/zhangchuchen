@@ -15,7 +15,7 @@ import com.dingtalk.api.response.OapiRobotSendResponse;
 
 public class shiyan7 {
 	public static void main(String[] args) throws Exception {
-		//加密，获取stamotime和sign，得到最终的签名
+		//加密，获取timestamp和sign，得到最终的签名
 		 Long timestamp = System.currentTimeMillis();
 		 	String secret = "SEC8cec5faf0aa08ec81ed732b7e82fb30c0509a140e5d43fdd6cbadfd2992cc60d";
 	        String stringToSign = timestamp + "\n" + secret;
@@ -39,5 +39,5 @@ public class shiyan7 {
 	        at.setIsAtAll(true);	        
 	        request.setAt(at);
 	        OapiRobotSendResponse response = client.execute(request);
-	}	
+	}
 }
